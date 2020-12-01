@@ -1,0 +1,12 @@
+name: 'Add reviewer to pull-request'
+description: 'Adds reviewer(s) to pull-request excluding petitioner'
+inputs:
+  reviewers:  # id of input
+    description: 'Reviewer(s) list, coma separated'
+    required: true
+  token:
+    required: true
+    description: GitHub Personal Access Token
+runs:
+  using: 'node12'
+  main: 'index.js'
